@@ -1,3 +1,12 @@
-body{
-  background: turquoise;
-}
+//utils
+@import "./utils/variables.scss";
+//base
+@import "./base/base.scss";
+//components
+@import "./components/button.scss";
+@import "./components/card.scss";
+//layout
+@import "./layouts/header.scss";
+@import "./layouts/footer.scss";
+//pages
+@import "./page/homepage.scss";

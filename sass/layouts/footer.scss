@@ -1,0 +1,29 @@
+.footer {
+  padding-left: 25px;
+  color: rgb(255, 255, 255);
+  background: $footer-bg;
+
+  &__title {
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
+  &__links {
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  &__links li {
+    padding-bottom: 7px;
+  }
+  &__links li > a {
+    display: flex;
+    align-items: center;
+  }
+  &__links li i {
+    margin-right: 11px;
+  }
+}

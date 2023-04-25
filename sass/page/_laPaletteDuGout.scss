@@ -1,0 +1,64 @@
+.introImage {
+  height: 275px;
+  & img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+  }
+}
+.menu {
+  position: relative;
+  margin-top: -55px;
+  padding: 32px 13px 40px 13px;
+  background: $primary;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+
+  &__title {
+    margin: 0px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+  }
+  &__title h2{
+  
+    font-family: "Shrikhand", cursive;
+    font-size: 28px;
+  }
+  &__title i{
+    font-size: 21px;
+  }
+
+  &__main{
+    margin-top: 42px;
+  }
+  &__main__meal{
+    margin-top: 40px;
+  }
+  &__main__meal:first-child{
+    margin-top: 0px;
+  }
+  &__main p{
+    font-size: 16px;
+  }
+  &__main__meal__card{
+    display: flex;
+    margin-top:12px;
+    padding: 12px 15px;
+    justify-content: space-between;
+  }
+  &__main__meal__card h2{
+    font-size: 15px;
+  }
+  &__main__meal__card__txt p{
+    font-size: 15px;
+  }
+  &__main__meal__card__price{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+
+  
+}

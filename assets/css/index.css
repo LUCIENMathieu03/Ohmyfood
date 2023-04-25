@@ -126,12 +126,21 @@ p {
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header__title {
   margin: 14px 0 5px 0;
+}
+.header__arrow {
+  position: absolute;
+  left: 23px;
+  top: 24px;
+}
+.header__arrow i {
+  font-size: 16px;
 }
 
 .footer {

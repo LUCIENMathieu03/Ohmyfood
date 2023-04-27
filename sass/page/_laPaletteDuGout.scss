@@ -6,6 +6,7 @@
     object-fit: cover;
   }
 }
+
 .menu {
   position: relative;
   margin-top: -55px;
@@ -18,47 +19,98 @@
     margin: 0px 4px;
     display: flex;
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
   }
-  &__title h2{
-  
+  &__title h2 {
     font-family: "Shrikhand", cursive;
     font-size: 28px;
   }
-  &__title i{
+  &__title i {
     font-size: 21px;
   }
 
-  &__main{
+  &__main {
     margin-top: 42px;
   }
-  &__main__meal{
+  &__main__meal {
     margin-top: 40px;
   }
-  &__main__meal:first-child{
+  &__main__meal:first-child {
     margin-top: 0px;
   }
-  &__main p{
+  &__main p {
     font-size: 16px;
   }
-  &__main__meal__card{
+  &__main__meal__card {
     display: flex;
-    margin-top:12px;
+    margin-top: 12px;
     padding: 12px 15px;
     justify-content: space-between;
   }
-  &__main__meal__card h2{
+  &__main__meal__card h2 {
     font-size: 15px;
   }
-  &__main__meal__card__txt p{
-    font-size: 15px;
+  &__main__meal__card__txt {
+    overflow: hidden;
   }
-  &__main__meal__card__price{
+  &__main__meal__card__txt h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__main__meal__card__txt p {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__main__meal__card__price {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
 
+  &__commander{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  &__commander a{
+    width: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 
-  
+/*********************** Responsive ***********************/
+
+/*********************************************************/
+/*********** Desktop & Tablet 768 > px ******************/
+/*******************************************************/
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > * {
+      width: 100%;
+    }
+  }
+
+  .menu {
+    max-width: 1055px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__main {
+    max-width: 634px;
+    width: 100%;
+  }
+  .menu__title {
+    justify-content: center;
+  }
+  .menu__title h2 {
+    margin-right: 24px;
+  }
 }

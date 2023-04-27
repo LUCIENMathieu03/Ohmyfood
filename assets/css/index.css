@@ -144,6 +144,9 @@ p {
 .header__title {
   margin: 14px 0 5px 0;
 }
+.header__img {
+  display: none;
+}
 .header__arrow {
   position: absolute;
   left: 23px;
@@ -153,6 +156,21 @@ p {
   font-size: 16px;
 }
 
+/*********************** Responsive ***********************/
+/*********************************************************/
+/********************* Desktop & Tablet 768 > px ******************/
+/*******************************************************/
+@media screen and (min-width: 768px) {
+  .header__title {
+    display: none;
+  }
+  .header__img {
+    display: block;
+    margin: 30px 0 32px 0;
+    width: 200px;
+    height: 35px;
+  }
+}
 .footer {
   padding-left: 25px;
   color: rgb(255, 255, 255);
@@ -182,6 +200,37 @@ p {
   margin-right: 11px;
 }
 
+/*********************** Responsive ***********************/
+/*********************************************************/
+/*********** Desktop & Tablet 768 > px ******************/
+/*******************************************************/
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer__title {
+    padding-top: 57px;
+    padding-bottom: 30px;
+    margin-right: 50px;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 100%;
+    margin-right: 70px;
+    padding-bottom: 30px;
+  }
+  .footer__links li {
+    padding-bottom: 0px;
+    margin-right: 7px;
+  }
+  .footer__links--grp {
+    display: flex;
+    margin-right: 50px;
+  }
+}
 .intro__location {
   background: #eaeaea;
   font-weight: 500;
@@ -322,6 +371,63 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+/*********************** Responsive ***********************/
+/*********************************************************/
+/********************* Desktop & Tablet 768 > px ******************/
+/*******************************************************/
+@media screen and (min-width: 768px) {
+  .restaurants {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .restaurants > div {
+    width: 100%;
+    max-width: 1080px;
+  }
+  .restaurants__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 50px;
+  }
+  .restaurants__list__card {
+    margin-bottom: 0px;
+  }
+  .fonctionnement {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .fonctionnement > div {
+    width: 100%;
+    max-width: 1080px;
+  }
+  .fonctionnement > ul {
+    width: 100%;
+    max-width: 1080px;
+  }
+  .fonctionnement__tuto {
+    display: flex;
+  }
+  .fonctionnement__tuto__card {
+    display: flex;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .fonctionnement__tuto__card {
+    margin-right: 24px;
+  }
+  .fonctionnement__tuto__card:last-child {
+    margin-right: 0px;
+  }
+  .intro__reserve__title h2 {
+    font-size: 40px;
+  }
+  .intro__reserve__title__lineBreak {
+    display: none;
+  }
+}
 .introImage {
   height: 275px;
 }
@@ -373,13 +479,65 @@ p {
 .menu__main__meal__card h2 {
   font-size: 15px;
 }
+.menu__main__meal__card__txt {
+  overflow: hidden;
+}
+.menu__main__meal__card__txt h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu__main__meal__card__txt p {
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__main__meal__card__price {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+.menu__commander {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.menu__commander a {
+  width: fit-content;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/*********************** Responsive ***********************/
+/*********************************************************/
+/*********** Desktop & Tablet 768 > px ******************/
+/*******************************************************/
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main > * {
+    width: 100%;
+  }
+  .menu {
+    max-width: 1055px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__main {
+    max-width: 634px;
+    width: 100%;
+  }
+  .menu__title {
+    justify-content: center;
+  }
+  .menu__title h2 {
+    margin-right: 24px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

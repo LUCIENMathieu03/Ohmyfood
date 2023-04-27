@@ -27,3 +27,39 @@
     margin-right: 11px;
   }
 }
+
+/*********************** Responsive ***********************/
+
+/*********************************************************/
+/*********** Desktop & Tablet 768 > px ******************/
+/*******************************************************/
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+
+    &__title {
+      padding-top: 57px;
+      padding-bottom: 30px;
+      margin-right: 50px;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      height: 100%;
+
+      margin-right: 70px ;
+      padding-bottom: 30px;
+    }
+    &__links li {
+      padding-bottom: 0px;
+      margin-right: 7px;
+    }
+    &__links--grp{
+      display: flex;
+      margin-right: 50px;
+    }
+  }
+}

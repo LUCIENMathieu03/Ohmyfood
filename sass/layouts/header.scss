@@ -1,17 +1,39 @@
-.header{
-  position:relative;
+.header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  &__title{
+  &__title {
     margin: 14px 0 5px 0;
   }
-  &__arrow{
+  &__img{
+    display: none;
+  }
+  &__arrow {
     position: absolute;
-    left:23px;
-    top:24px;
+    left: 23px;
+    top: 24px;
   }
   &__arrow i {
     font-size: 16px;
+  }
+}
+
+/*********************** Responsive ***********************/
+
+/*********************************************************/
+/********************* Desktop & Tablet 768 > px ******************/
+/*******************************************************/
+@media screen and (min-width: 768px) {
+  .header {
+    &__title {
+      display: none;
+    }
+    &__img {
+      display: block;
+      margin: 30px 0 32px 0;
+      width: 200px;
+      height: 35px;
+    }
   }
 }

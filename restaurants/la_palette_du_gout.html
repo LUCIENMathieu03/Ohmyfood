@@ -15,16 +15,21 @@
             <i class="fa-solid fa-arrow-left"></i
           ></a>
           <h1 class="header__title">Ohmyfood</h1>
+          <img
+            class="header__img"
+            alt="logo_ohmyfood"
+            src="../assets/images/logo/ohmyfood@2x.svg"
+          />
         </div>
       </header>
 
-      <div class="main">
-        <section class="introImage">
+      <main>
+        <div class="introImage">
           <img
             src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
             alt="La palette du gout"
           />
-        </section>
+        </div>
 
         <section class="menu">
           <div class="menu__title">
@@ -34,7 +39,6 @@
           </div>
 
           <section class="menu__main">
-
             <div class="menu__main__meal">
               <p>ENTRÉE</p>
               <div class="menu__main__meal__separator separator"></div>
@@ -121,7 +125,7 @@
 
               <div class="menu__main__meal__card card">
                 <div class="menu__main__meal__card__txt">
-                  <h3>Macaron au chocolat d'exception </h3>
+                  <h3>Macaron au chocolat d'exception</h3>
                   <p>Et glace à la vanille de Madagascar</p>
                 </div>
                 <div class="menu__main__meal__card__price">
@@ -131,7 +135,7 @@
 
               <div class="menu__main__meal__card card">
                 <div class="menu__main__meal__card__txt">
-                  <h3>Mousse au chocolat </h3>
+                  <h3>Mousse au chocolat</h3>
                   <p>Au piment d'Espelette et à la truffe noire</p>
                 </div>
                 <div class="menu__main__meal__card__price">
@@ -139,26 +143,32 @@
                 </div>
               </div>
             </div>
-
           </section>
+
+          <div class="menu__commander btn">
+            <a href="#">Commander</a>
+          </div>
         </section>
-      </div>
+      </main>
 
       <footer class="footer">
         <h3 class="footer__title">Ohmyfood</h3>
         <nav>
           <ul class="footer__links">
-            <li>
-              <a href="#">
-                <i class="fas fa-fw fa-utensils"> </i>Proposer un restaurant</a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-solid fa-fw fa-handshake-angle"> </i>Devenir
-                partenaire</a
-              >
-            </li>
+            <div class="footer__links--grp">
+              <li>
+                <a href="#">
+                  <i class="fas fa-fw fa-utensils"> </i>Proposer un
+                  restaurant</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-fw fa-handshake-angle"> </i>Devenir
+                  partenaire</a
+                >
+              </li>
+            </div>
             <li><a href="#"> Mention légale</a></li>
             <li><a href="#"> Contact </a></li>
           </ul>

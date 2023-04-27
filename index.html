@@ -12,6 +12,7 @@
       <header>
         <div class="header">
           <h1 class="header__title">Ohmyfood</h1>
+          <img class="header__img" alt="logo_ohmyfood" src="assets/images/logo/ohmyfood@2x.svg"/>
         </div>
       </header>
 
@@ -22,13 +23,15 @@
         <div class="intro__reserve">
           <div class="intro__reserve__title">
             <h2>
-              Réservez le menu qui <br />
+              Réservez le menu qui
+              <br class="intro__reserve__title__lineBreak" />
               vous convient
             </h2>
           </div>
           <p>
-            Découvrez des restaurants d’exception, <br />sélectionnés par nos
-            soins.
+            Découvrez des restaurants d’exception,
+            <br class="intro__reserve__title__lineBreak" />
+            sélectionnés par nos soins.
           </p>
           <div class="intro__reserve__button btn">
             <a href="#">Explorer nos restaurants</a>
@@ -37,7 +40,10 @@
       </section>
 
       <section class="fonctionnement">
-        <h2>Fonctionnement</h2>
+        <div>
+          <h2>Fonctionnement</h2>
+        </div>
+
         <ul class="fonctionnement__tuto">
           <li class="fonctionnement__tuto__card card">
             <div class="fonctionnement__tuto__card__number">1</div>
@@ -57,7 +63,9 @@
         </ul>
       </section>
       <main class="restaurants">
-        <h2>Restaurant</h2>
+        <div>
+          <h2>Restaurant</h2>
+        </div>
         <div class="restaurants__list">
           <article
             class="restaurants__list__card card restaurants__list__card--new"
@@ -137,17 +145,18 @@
         <h3 class="footer__title">Ohmyfood</h3>
         <nav>
           <ul class="footer__links">
-            <li>
-              <a href="#">
-                <i class="fas fa-fw fa-utensils"> </i>Proposer un restaurant</a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-solid fa-fw fa-handshake-angle"> </i>Devenir
-                partenaire</a
-              >
-            </li>
+            <div class="footer__links--grp" >
+              <li >
+                <a href="#">
+                  <i class="fas fa-fw fa-utensils"> </i>Proposer un restaurant</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-fw fa-handshake-angle"> </i>Devenir
+                  partenaire</a>
+              </li>
+            </div>
             <li><a href="#"> Mention légale</a></li>
             <li><a href="#"> Contact </a></li>
           </ul>

@@ -388,7 +388,7 @@ p {
   .restaurants__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
+    column-gap: 9.2%;
     row-gap: 50px;
   }
   .restaurants__list__card {

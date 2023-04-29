@@ -164,7 +164,7 @@
     &__list {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      column-gap: 100px;
+      column-gap: 9.2%; // it will take 100px at max-width
       row-gap: 50px;
       
     }

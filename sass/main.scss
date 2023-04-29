@@ -1,11 +1,13 @@
 //utils
 @import "./utils/variables.scss";
+@import "./utils/mixins.scss";
 //base
 @import "./base/base.scss";
 //components
 @import "./components/button.scss";
 @import "./components/card.scss";
 @import "./components/separator.scss";
+@import "./components/like-btn.scss";
 //layout
 @import "./layouts/header.scss";
 @import "./layouts/footer.scss";

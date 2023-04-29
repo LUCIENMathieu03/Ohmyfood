@@ -1,0 +1,30 @@
+.like-btn {
+  position: relative;
+
+  &__heart--empty--filled {
+    @include pseudo-elem; //this isn't a pseudo element but it will act like it's one
+    background: $btn-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+
+  &__heart--empty {
+    position: relative;
+    background: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+
+    &:hover &--filled {
+      opacity: 1;
+      animation: like 300ms both;
+    }
+  }
+
+  
+}

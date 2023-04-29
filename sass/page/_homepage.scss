@@ -137,13 +137,8 @@
   &__list__card__txt h3 {
     font-weight: 700;
   }
-  &__list__card__txt i {
-    position: relative;
+  &__list__card__txt__like{
     margin-top: 8px;
-    background: $btn-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 }
 

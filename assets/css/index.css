@@ -108,7 +108,8 @@ p {
   font-size: 15px;
 }
 
-.btn a {
+.btn > a {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,6 +119,24 @@ p {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   text-align: center;
+  z-index: 1;
+}
+.btn > a:hover::after {
+  opacity: 1;
+}
+.btn > a::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 25px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms;
 }
 
 .card {
@@ -133,6 +152,37 @@ p {
   margin-top: 5px;
   width: 40px;
   border: 1px solid #99E2D0;
+}
+
+.like-btn {
+  position: relative;
+}
+.like-btn__heart--empty--filled {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.like-btn__heart--empty {
+  position: relative;
+  background: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+.like-btn__heart--empty:hover .like-btn__heart--empty--filled {
+  opacity: 1;
+  animation: like 300ms both;
 }
 
 .header {
@@ -362,13 +412,8 @@ p {
 .restaurants__list__card__txt h3 {
   font-weight: 700;
 }
-.restaurants__list__card__txt i {
-  position: relative;
+.restaurants__list__card__txt__like {
   margin-top: 8px;
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /*********************** Responsive ***********************/

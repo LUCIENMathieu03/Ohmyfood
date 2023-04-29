@@ -1,3 +1,14 @@
+@keyframes show-menu {
+  from{
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+}
+
 .introImage {
   height: 275px;
   & img {
@@ -34,6 +45,13 @@
   }
   &__main__meal {
     margin-top: 40px;
+    animation: show-menu $anim-dur both;
+
+    @for $i from 1 through 3 {
+      &--#{$i}{
+        animation-delay: $anim-delay * $i;
+      }
+    }
   }
   &__main__meal:first-child {
     margin-top: 0px;
@@ -53,7 +71,7 @@
   &__main__meal__card__txt {
     overflow: hidden;
   }
-  &__main__meal__card__txt h3{
+  &__main__meal__card__txt h3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -70,12 +88,13 @@
     justify-content: flex-end;
   }
 
-  &__commander{
+  &__commander {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    animation: show-menu $anim-dur 1500ms both;
   }
-  &__commander a{
+  &__commander a {
     width: fit-content;
     padding-left: 40px;
     padding-right: 40px;

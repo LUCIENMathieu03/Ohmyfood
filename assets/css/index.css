@@ -1,4 +1,6 @@
-/* colors */ /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+/* colors */
+/* Timiming animation menu */
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 html,
 body,
@@ -473,6 +475,16 @@ p {
     display: none;
   }
 }
+@keyframes show-menu {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+}
 .introImage {
   height: 275px;
 }
@@ -508,6 +520,16 @@ p {
 }
 .menu__main__meal {
   margin-top: 40px;
+  animation: show-menu 1000ms both;
+}
+.menu__main__meal--1 {
+  animation-delay: 333.3333333333ms;
+}
+.menu__main__meal--2 {
+  animation-delay: 666.6666666667ms;
+}
+.menu__main__meal--3 {
+  animation-delay: 1000ms;
 }
 .menu__main__meal:first-child {
   margin-top: 0px;
@@ -547,6 +569,7 @@ p {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+  animation: show-menu 1000ms 1500ms both;
 }
 .menu__commander a {
   width: fit-content;

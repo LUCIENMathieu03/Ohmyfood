@@ -6,3 +6,9 @@ $secondary: #9356DC;
 $btn-gradient: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 $tagNew-bg: #99E2D0;
 $tagNew-txt: #008766;
+
+
+/* Timiming animation menu */
+
+$anim-dur: 1000ms;
+$anim-delay: calc($anim-dur / 3);

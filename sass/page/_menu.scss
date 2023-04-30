@@ -1,5 +1,4 @@
 .introImage {
-  height: 275px;
   & img {
     width: 100%;
     height: 275px;
@@ -8,6 +7,7 @@
 }
 
 .menu {
+  width: 100%;
   position: relative;
   margin-top: -55px;
   padding: 32px 13px 40px 13px;
@@ -34,6 +34,13 @@
   }
   &__main__meal {
     margin-top: 40px;
+    animation: show-menu $anim-dur both;
+
+    @for $i from 1 through 3 {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+    }
   }
   &__main__meal:first-child {
     margin-top: 0px;
@@ -43,39 +50,65 @@
   }
   &__main__meal__card {
     display: flex;
+    overflow: hidden;
     margin-top: 12px;
+  }
+  &__main__meal__card__contents {
+    width: 100%;
+    display: flex;
     padding: 12px 15px;
     justify-content: space-between;
-  }
-  &__main__meal__card h2 {
-    font-size: 15px;
-  }
-  &__main__meal__card__txt {
     overflow: hidden;
   }
-  &__main__meal__card__txt h3{
+  &__main__meal__card__contents h2 {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  &__main__meal__card__contents__txt {
+    overflow: hidden;
+  }
+  &__main__meal__card__contents__txt h3 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  &__main__meal__card__txt p {
+  &__main__meal__card__contents__txt p {
     font-size: 15px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  &__main__meal__card__price {
+  &__main__meal__card__contents__price {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
-
-  &__commander{
+  &__main__meal__card__selected {
+    background: $tagNew-bg;
+    width: 59px;
+    position: relative;
+    margin-right: -59px;
+    transition: margin-right 500ms;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  &__main__meal__card__selected {
+    font-size: 20px;
+  }
+  &__main__meal__card:hover > &__main__meal__card__selected {
+    margin-right: 0px;
+  }
+  
+  &__commander {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    animation: show-menu $anim-dur 1500ms both;
   }
-  &__commander a{
+  &__commander a {
     width: fit-content;
     padding-left: 40px;
     padding-right: 40px;
@@ -87,6 +120,8 @@
 /*********************************************************/
 /*********** Desktop & Tablet 768 > px ******************/
 /*******************************************************/
+
+
 @media screen and (min-width: 768px) {
   main {
     display: flex;
@@ -114,3 +149,22 @@
     margin-right: 24px;
   }
 }
+
+
+/*********************************************************/
+/*********************** Keframes ***********************/
+/*******************************************************/
+
+
+@keyframes show-menu {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+}
+
+

@@ -11,4 +11,4 @@ $tagNew-txt: #008766;
 /* Timiming animation menu */
 
 $anim-dur: 1000ms;
-$anim-delay: $anim-dur / 3
+$anim-delay: calc($anim-dur / 3);

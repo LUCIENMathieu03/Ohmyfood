@@ -10,9 +10,12 @@
   border-radius: 25px;
   text-align: center;
   z-index: 1;
-  &:hover::after {
-    opacity: 1;
+  transition: transform 300ms;
+
+  &:active{
+    transform: scale(0.9);
   }
+  
 
   &::after {
     @include pseudo-elem;
@@ -27,6 +30,9 @@
     opacity: 0;
     z-index: -1;
     transition: opacity 400ms;
+  }
+  &:hover::after {
+    opacity: 1;
   }
 }
 

@@ -44,7 +44,7 @@
   }
 
   &__reserve__title {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     text-align: center;
   }
 
@@ -56,7 +56,7 @@
   &__reserve__button {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 27px;
   }
   &__reserve__button a {
     padding-left: 19px;
@@ -68,7 +68,7 @@
   margin: 48px 20px 68px 20px;
 
   &__tuto {
-    margin-top: 26px;
+    margin-top: 25px;
   }
   &__tuto__card {
     display: flex;
@@ -221,6 +221,15 @@
     }
     &__reserve__title__lineBreak{
       display: none;
+    }
+
+    &__reserve {
+      padding-bottom: 30px;
+      
+    }
+    
+    &__reserve__button{
+      margin-top: 18px;
     }
   }
 }

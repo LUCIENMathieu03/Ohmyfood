@@ -290,6 +290,21 @@ p {
     margin-right: 50px;
   }
 }
+.loader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 5;
+  animation: fade-in-out 500ms ease 3080ms both;
+}
+.loader img {
+  animation: breathing-loader 4 1000ms ease-in-out alternate both;
+}
+
 .intro__location {
   background: #eaeaea;
   font-weight: 500;
@@ -427,7 +442,7 @@ p {
 
 /*********************** Responsive ***********************/
 /*********************************************************/
-/********************* Desktop & Tablet 768 > px ******************/
+/**************** Desktop & Tablet 768 > px *************/
 /*******************************************************/
 @media screen and (min-width: 768px) {
   .restaurants {
@@ -480,6 +495,30 @@ p {
   }
   .intro__reserve__title__lineBreak {
     display: none;
+  }
+}
+/*********************************************************/
+/*********************** Keframes ***********************/
+/*******************************************************/
+@keyframes breathing-loader {
+  from {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-out {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+    z-index: 0;
   }
 }
 .introImage img {

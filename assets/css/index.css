@@ -162,6 +162,7 @@ p {
 
 .like-btn {
   position: relative;
+  cursor: pointer;
 }
 .like-btn__heart--empty--filled {
   position: absolute;

@@ -1,6 +1,7 @@
 .like-btn {
   position: relative;
-
+  cursor: pointer;
+  
   &__heart--empty--filled {
     @include pseudo-elem; //this isn't a pseudo element but it will act like it's one
     background: $btn-gradient;

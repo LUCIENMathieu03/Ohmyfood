@@ -248,14 +248,14 @@ p {
   font-size: 16px;
   padding-bottom: 15px;
 }
-.footer__links li {
+.footer__links__link {
   padding-bottom: 7px;
 }
-.footer__links li > a {
+.footer__links__link > a {
   display: flex;
   align-items: center;
 }
-.footer__links li i {
+.footer__links__link i {
   margin-right: 11px;
 }
 
@@ -281,7 +281,7 @@ p {
     margin-right: 70px;
     padding-bottom: 30px;
   }
-  .footer__links li {
+  .footer__links__link {
     padding-bottom: 0px;
     margin-right: 7px;
   }

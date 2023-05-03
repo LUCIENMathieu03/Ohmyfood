@@ -16,14 +16,14 @@
     font-size: 16px;
     padding-bottom: 15px;
   }
-  &__links li {
+  &__links__link {
     padding-bottom: 7px;
   }
-  &__links li > a {
+  &__links__link > a {
     display: flex;
     align-items: center;
   }
-  &__links li i {
+  &__links__link i {
     margin-right: 11px;
   }
 }
@@ -49,11 +49,10 @@
       flex-direction: row;
       align-items: flex-end;
       height: 100%;
-
       margin-right: 70px ;
       padding-bottom: 30px;
     }
-    &__links li {
+    &__links__link {
       padding-bottom: 0px;
       margin-right: 7px;
     }

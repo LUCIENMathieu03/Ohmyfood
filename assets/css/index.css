@@ -162,6 +162,7 @@ p {
 
 .like-btn {
   position: relative;
+  cursor: pointer;
 }
 .like-btn__heart--empty--filled {
   position: absolute;
@@ -248,14 +249,14 @@ p {
   font-size: 16px;
   padding-bottom: 15px;
 }
-.footer__links li {
+.footer__links__link {
   padding-bottom: 7px;
 }
-.footer__links li > a {
+.footer__links__link > a {
   display: flex;
   align-items: center;
 }
-.footer__links li i {
+.footer__links__link i {
   margin-right: 11px;
 }
 
@@ -281,7 +282,7 @@ p {
     margin-right: 70px;
     padding-bottom: 30px;
   }
-  .footer__links li {
+  .footer__links__link {
     padding-bottom: 0px;
     margin-right: 7px;
   }
@@ -346,13 +347,13 @@ p {
   padding-right: 19px;
 }
 
-.fonctionnement {
+.howItWorks {
   margin: 48px 20px 68px 20px;
 }
-.fonctionnement__tuto {
+.howItWorks__tuto {
   margin-top: 25px;
 }
-.fonctionnement__tuto__card {
+.howItWorks__tuto__card {
   display: flex;
   align-items: center;
   position: relative;
@@ -361,24 +362,24 @@ p {
   background-color: #F6F6F6;
   border-radius: 20px;
 }
-.fonctionnement__tuto__card:last-child {
+.howItWorks__tuto__card:last-child {
   margin-bottom: 0px;
 }
-.fonctionnement__tuto__card i {
+.howItWorks__tuto__card i {
   margin-right: 27px;
   margin-left: 33.5px;
   font-size: 20px;
   color: #7e7e7e;
 }
-.fonctionnement__tuto__card:last-child i {
+.howItWorks__tuto__card:last-child i {
   color: #9356DC;
 }
-.fonctionnement__tuto__card p {
+.howItWorks__tuto__card p {
   margin: 29px 0 29px 0;
   font-size: 16px;
   font-weight: 500;
 }
-.fonctionnement__tuto__card__number {
+.howItWorks__tuto__card__number {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -463,31 +464,31 @@ p {
   .restaurants__list__card {
     margin-bottom: 0px;
   }
-  .fonctionnement {
+  .howItWorks {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .fonctionnement > div {
+  .howItWorks > div {
     width: 100%;
     max-width: 1080px;
   }
-  .fonctionnement > ul {
+  .howItWorks > ul {
     width: 100%;
     max-width: 1080px;
   }
-  .fonctionnement__tuto {
+  .howItWorks__tuto {
     display: flex;
   }
-  .fonctionnement__tuto__card {
+  .howItWorks__tuto__card {
     display: flex;
     margin-bottom: 0px;
     width: 100%;
   }
-  .fonctionnement__tuto__card {
+  .howItWorks__tuto__card {
     margin-right: 24px;
   }
-  .fonctionnement__tuto__card:last-child {
+  .howItWorks__tuto__card:last-child {
     margin-right: 0px;
   }
   .intro__reserve__title h2 {
